@@ -1,0 +1,11 @@
+{
+  "name": "whatweb",
+  "script_path": "scripts/whatweb.sh",
+  "description": "Run whatweb scan on a target",
+  "parameters": [
+    {
+      "name": "Target",
+      "description": "IP or domain"
+    }
+  ]
+}
