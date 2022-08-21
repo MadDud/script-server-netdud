@@ -4,6 +4,14 @@ script-server (https://github.com/bugy/script-server) is an excelent tool, which
 
 The purpose of this version is to enable user to install additional tools, so that they can be executed via script-server. 
 
+## Tools
+
+* nmap
+* dig
+* whatweb
+* sslscan
+* Knockpy
+
 ## Installation
 
 This is a docker image, which needs to be modified by adding desired software to the following line of `Dockerfile`:
