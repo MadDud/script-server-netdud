@@ -41,6 +41,16 @@ mkdir runners
 
 touch config/conf.json
 ```
+the `conf.json` file needs to at least contain the following setup:
+```
+{
+  "port": 5000,
+  "title": "script-server netdud"
+}
+```
+Details about the config can be found at https://github.com/bugy/script-server/wiki/Server-configuration
+
+
 Create container:
 
 ```
