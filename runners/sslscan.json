@@ -1,0 +1,14 @@
+{
+  "name": "SSLscan",
+  "script_path": "scripts/sslscan.sh",
+  "description": "SSL Scan",
+  "group": "SSL",
+  "output_format": "text",
+  "parameters": [
+    {
+      "name": "URL address",
+      "required": true,
+      "type": "text"
+    }
+  ]
+}

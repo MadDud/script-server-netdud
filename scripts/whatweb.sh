@@ -1,3 +1,3 @@
 #!/bin/bash
 
-whatweb $1
+whatweb --verbose --follow-redirect=same-site $1

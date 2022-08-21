@@ -2,9 +2,12 @@
   "name": "whatweb",
   "script_path": "scripts/whatweb.sh",
   "description": "Run whatweb scan on a target",
+  "group": "HTTP",
   "parameters": [
     {
-      "name": "Target",
+      "name": "URL",
+      "required": true,
+      "type": "text",
       "description": "IP or domain"
     }
   ]

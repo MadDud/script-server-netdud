@@ -1,12 +1,12 @@
 {
-  "name": "dig",
-  "script_path": "scripts/dns.sh",
-  "description": "DNS lookup",
+  "name": "Knockpy",
+  "script_path": "scripts/knockpy.sh",
+  "description": "Bruteforce DNS discovery",
   "group": "DNS",
   "output_format": "text",
   "parameters": [
     {
-      "name": "DNS address",
+      "name": "DNS",
       "required": true,
       "type": "text"
     }

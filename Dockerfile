@@ -6,8 +6,8 @@ RUN apt-get install --yes wget unzip python3-pip
 
 # install tools that you want to use with script-server
 # modify this line by adding your tools
-
-RUN apt-get install --yes nmap whatweb net-tools nikto dnsutils
+RUN DEBIAN_FRONTEND=noninteractive TZ=Etc/UTC apt-get -y install tzdata
+RUN apt-get install --yes nmap whatweb net-tools nikto dnsutils knockpy sslscan wkhtmltopdf
 
 
 # download the most recent version of script-server

@@ -1,0 +1,14 @@
+{
+  "name": "wkhtmltoimage",
+  "script_path": "scripts/wkhtmltoimage.sh",
+  "description": "Website screenshot",
+  "group": "HTTP",
+  "output_format": "text",
+  "parameters": [
+    {
+      "name": "url",
+      "required": true,
+      "type": "text"
+    }
+  ]
+}
