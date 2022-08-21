@@ -1,4 +1,11 @@
 {
   "port": 5000,
-  "title": "script-server netdud"
+  "title": "script-server netdud",
+  "logging": {
+    "execution_file": "$DATE-$ID.log",
+    "execution_date_format": "%y-%m-%d_%H-%M"
+  },
+  "access": {
+	"admin_users": [ "*" ]
+  }
 }

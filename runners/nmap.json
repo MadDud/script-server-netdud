@@ -2,6 +2,7 @@
   "name": "nmap",
   "script_path": "scripts/nmap.sh",
   "description": "Run nmap scan on a target",
+  "group": "Network",
   "parameters": [
     {
       "name": "Target",

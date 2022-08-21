@@ -1,0 +1,14 @@
+{
+  "name": "dns",
+  "script_path": "scripts/dns.sh",
+  "description": "DNS lookup",
+  "group": "Network",
+  "output_format": "text",
+  "parameters": [
+    {
+      "name": "DNS address",
+      "required": true,
+      "type": "text"
+    }
+  ]
+}
