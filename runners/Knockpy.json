@@ -1,5 +1,5 @@
 {
-  "name": "Knockpy",
+  "name": "knockpy",
   "script_path": "scripts/knockpy.sh",
   "description": "Bruteforce DNS discovery",
   "group": "DNS",
