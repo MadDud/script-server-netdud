@@ -1,0 +1,14 @@
+{
+  "name": "wtfis",
+  "script_path": "scripts/wtfis.sh",
+  "description": "WTFis lookup",
+  "group": "DNS",
+  "output_format": "text",
+  "parameters": [
+    {
+      "name": "DNS address",
+      "required": true,
+      "type": "text"
+    }
+  ]
+}

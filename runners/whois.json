@@ -1,0 +1,13 @@
+{
+  "name": "whois",
+  "script_path": "scripts/whois.sh",
+  "group": "DNS",
+  "output_format": "terminal",
+  "parameters": [
+    {
+      "name": "DNS address",
+      "required": true,
+      "type": "text"
+    }
+  ]
+}
