@@ -11,47 +11,24 @@ The purpose of this version is to enable user to install additional tools, so th
 * whatweb
 * sslscan
 * Knockpy
+* whois
 
 ## Installation
 
-This is a docker image, which needs to be modified by adding desired software to the following line of `Dockerfile`:
-
-```bash
-# install tools that you want to use with script-server
-# modify this line by adding your tools
-
-RUN apt-get install --yes nmap whatweb net-tools nikto
+Download repository
 ```
-
-
+$ git clone https://github.com/MadDud/script-server-netdud.git
+$ cd script-server-netdud
+```
 
 Build your docker image:
 
 ```
 $ docker build -t test/script-server-netdud:latest .
 ```
-### Deploy docker container
-
-Create required folders and a config file:
-
-```
-mkdir config
-mkdir scripts
-mkdir runners
-
-touch config/conf.json
-```
-the `conf.json` file needs to at least contain the following setup:
-```
-{
-  "port": 5000,
-  "title": "script-server netdud"
-}
-```
 Details about the config can be found at https://github.com/bugy/script-server/wiki/Server-configuration
 
-
-Create container:
+Create and start the container:
 
 ```
 docker run -d -p 5000:5000 \
@@ -61,6 +38,23 @@ docker run -d -p 5000:5000 \
            --name script-server \
            test/script-server-netdud:latest
 ```
+
+The application is available at http://127.0.0.1:5000
+
+The admin interface is available at http://127.0.0.1:5000/admin.html
+
+## Adding custom software
+
+You can add your custom software to the container by modifying the following line of `Dockerfile`:
+
+```bash
+# install tools that you want to use with script-server
+# modify this line by adding your tools
+
+RUN apt-get install --yes nmap whatweb net-tools nikto
+```
+
+Then just build the docker image again.
 
 ## Credit
 
