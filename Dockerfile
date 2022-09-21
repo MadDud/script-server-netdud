@@ -1,6 +1,7 @@
 FROM ubuntu
 
 RUN apt-get update
+RUN apt-get --yes upgrade
 # install things required to run script-servver
 RUN apt-get install --yes wget unzip python3-pip
 
