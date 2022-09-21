@@ -1,8 +1,8 @@
 FROM ubuntu:20.04
 
-
 RUN apt-get update
-RUN apt-get --yes upgrade
+RUN DEBIAN_FRONTEND=noninteractive apt-get --yes install keyboard-configuration
+#RUN apt-get --yes upgrade
 # install things required to run script-servver
 RUN apt-get install --yes wget unzip python3-pip
 
@@ -28,6 +28,6 @@ RUN wget https://github.com/bugy/script-server/releases/latest/download/script-s
 RUN unzip script-server.zip
 RUN pip install -r requirements.txt
 
-HEALTHCHECK  --timeout=3s CMD curl --fail http://localhost:5000 || exit 1  
+HEALTHCHECK  --timeout=3s CMD curl --fail http://localhost:5000 || exit 1
 EXPOSE 5000
 CMD [ "python3", "launcher.py" ]
