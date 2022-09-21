@@ -12,7 +12,6 @@ RUN apt-get install --yes nmap whatweb net-tools nikto dnsutils knockpy sslscan 
 RUN apt-get install --yes whois
 
 # install wtfis
-RUN apt-get install python3-pip
 RUN pip3 install wtfis
 
 
