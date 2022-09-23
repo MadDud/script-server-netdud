@@ -29,12 +29,14 @@ $ docker build -t test/script-server-netdud:latest .
 Details about the config can be found at https://github.com/bugy/script-server/wiki/Server-configuration
 
 Create and start the container:
+Replace ` /host/path/to` with your path to this folder.
 
 ```
 docker run -d -p 5000:5000 \
            -v /host/path/to/config/conf.json:/app/conf/conf.json \
            -v /host/path/to/runners/:/app/conf/runners \
            -v /host/path/to/scripts/:/app/scripts/ \
+           -v /host/path/to/conf/theme/:/app/conf/theme/ \
            --name script-server \
            test/script-server-netdud:latest
 ```
