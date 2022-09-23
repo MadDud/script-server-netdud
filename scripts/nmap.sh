@@ -1,4 +1,4 @@
 #!/bin/bash
 
 
-nmap $1
+nmap $1 $2 $3
