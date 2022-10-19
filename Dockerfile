@@ -4,7 +4,7 @@ RUN apt-get update
 RUN DEBIAN_FRONTEND=noninteractive apt-get --yes install keyboard-configuration
 #RUN apt-get --yes upgrade
 # install things required to run script-servver
-RUN apt-get install --yes wget unzip python3-pip
+RUN apt-get install --yes wget unzip python3-pip curl
 
 # install tools that you want to use with script-server
 # modify this line by adding your tools
