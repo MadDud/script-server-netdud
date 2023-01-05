@@ -12,14 +12,14 @@
     },
     {
       "name": "Profiles",
-      "same_arg_param": true,
       "type": "list",
       "description": "Predefined nmap profiles",
       "values": [
         "-A",
         "-p-",
         " --script=http-headers -p80,443"
-      ]
+      ],
+      "multiselect_argument_type": "repeat_param_value"
     },
     {
       "name": "Ports",

@@ -4,12 +4,12 @@ RUN apt-get update
 RUN DEBIAN_FRONTEND=noninteractive apt-get --yes install keyboard-configuration
 #RUN apt-get --yes upgrade
 # install things required to run script-servver
-RUN apt-get install --yes wget unzip python3-pip 
+RUN apt-get install --yes wget unzip python3-pip
 
 # install tools that you want to use with script-server
 # modify this line by adding your tools
 RUN DEBIAN_FRONTEND=noninteractive TZ=Etc/UTC apt-get -y install tzdata
-RUN apt-get install --yes nmap whatweb net-tools nikto dnsutils knockpy wkhtmltopdf
+RUN apt-get install --yes nmap whatweb net-tools nikto dnsutils knockpy wkhtmltopdf tesseract-ocr
 
 RUN apt-get install --yes whois
 

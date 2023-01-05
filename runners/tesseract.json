@@ -1,0 +1,13 @@
+{
+  "name": "Tesseract",
+  "script_path": "scripts/tesseract.sh",
+  "description": "Image OCR",
+  "output_format": "text",
+  "parameters": [
+    {
+      "name": "Image url",
+      "required": true,
+      "type": "text"
+    }
+  ]
+}
