@@ -12,6 +12,7 @@ The purpose of this version is to enable user to install additional tools, so th
 * sslscan
 * Knockpy
 * whois
+* Tesseract
 
 ## Installation
 
@@ -29,7 +30,7 @@ $ docker build -t test/script-server-netdud:latest .
 Details about the config can be found at https://github.com/bugy/script-server/wiki/Server-configuration
 
 Create and start the container:
-Replace ` /host/path/to` with your path to this folder.
+Replace `/host/path/to` with your path to this folder.
 
 ```
 docker run -d -p 5000:5000 \
